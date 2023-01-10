@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: 0.5s;
+}
+.additional-text {
+  font-size: 1.8rem;
+}
+.top-hero {
+  position: relative;
+  height: 20rem;
+  background-size: cover;
+  z-index: 0;
+}
+.top-hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+/* ------------------ */
+/*    NAVIGATION       */
+/* ------------------ */
+nav {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  font-size: 2.5rem;
+}
+.navbar-brand {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: none;
+}
+.nav-link {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  transition: 0.2s;
+}
+.nav-link:hover {
+  filter: drop-shadow(20px);
+}
+
+/*---------------------INDEX----------------------------*/
+
+/* ------------------ */
+/*       HEADER       */
+/* ------------------ */
+
+header {
+  font-size: 2rem;
+}
+.carousel-item {
+  position: relative;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+.carousel-img-one {
+  background-image: url(../img/index/t1.jpg);
+}
+.carousel-img-two {
+  background-image: url(../img/index/d1.jpg);
+}
+
+.carousel-img-three {
+  background-image: url(../img/index/t2.jpg);
+}
+/* ------------------ */
+/*       MAIN      */
+/* ------------------ */
+
+.home-boxes {
+  padding: 5rem 0rem;
+}
+.home-box i {
+  font-size: 4rem;
+}
+.home-box h3 {
+  font-size: 2.6rem;
+}
+
+/*---------------------OFFERT----------------------------*/
+
+/* ------------------ */
+/*       MAIN      */
+/* ------------------ */
+
+.cards {
+  max-width: 753px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.offer h1 {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 3rem;
+}
+.cards h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card1,
+.card2,
+.card3 {
+  border: 1px solid #ddd;
+  margin: 20px 5px 20px 5px;
+}
+.cards i {
+  margin: 5px 0 5px 0;
+  width: 100%;
+  font-size: 5rem;
+  text-align: center;
+}
+.cards a {
+  color: black;
+  text-decoration: none;
+}
+i.fa-arrow-alt-circle-right {
+  font-size: 2.5rem;
+}
+/* ------------------ */
+/*       MODAL       */
+/* ------------------ */
+.show-modal {
+  text-align: center;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.hidden {
+  display: none;
+}
+
+.modal-one,
+.modal-two,
+.modal-three {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-one {
+  transform: translate(-50%, -30%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+  overflow: hidden;
+}
+/*---------------------GALLERY----------------------------*/
+.gallery h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px auto;
+}
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.pic1,
+.pic2,
+.pic3,
+.pic4,
+.pic5,
+.pic6,
+.pic7 {
+  width: 90%;
+  height: 400px;
+  margin: 30px 0 30px 0;
+  background-position: center;
+  background-size: cover;
+  z-index: 5;
+  border-radius: 1%;
+}
+
+.pic1 {
+  background-image: url(../img/gallery/gab3.jpg);
+}
+.pic2 {
+  background-image: url(../img/gallery/gab9.jpg);
+}
+.pic3 {
+  background-image: url(../img/gallery/gab5.jpg);
+}
+.pic4 {
+  background-image: url(../img/gallery/gab6.png);
+}
+.pic5 {
+  background-image: url(../img/gallery/gab7.png);
+}
+.pic6 {
+  background-image: url(../img/gallery/gab8.jpg);
+}
+.pic7 {
+  background-image: url(../img/gallery/gab01.jpg);
+}
+
+/*---------------------GUIDE----------------------------*/
+.guider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.artflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.art1,
+.art2 {
+  border: 1px solid #ddd;
+  margin-bottom: 5%;
+}
+.accordion {
+  margin-top: 30px;
+}
+.option {
+  background-color: #ddd;
+  font-size: 1.5rem;
+  padding: 12px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+.panel {
+  background-color: white;
+  overflow: hidden;
+}
+.guider h1 {
+  font-size: 3rem;
+  margin: 30px;
+  text-align: center;
+}
+.guider h2 {
+  font-size: 2rem;
+  text-align: left;
+  padding: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+.art2 h2 {
+  text-align: right;
+}
+.panel h3 {
+  margin: 30px;
+}
+.art1 p,
+.art2 p {
+  text-align: left;
+  font-size: 1.8rem;
+  width: 80%;
+}
+.art2 p {
+  margin-left: 5%;
+}
+.panel p {
+  padding: 0, 20px;
+  margin-left: 50px;
+}
+.option i {
+  font-size: 13px;
+  transform: translate(0, 50%);
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.artflex img {
+  margin-right: 20px;
+}
+/* ------------------ */
+/*       Contact      */
+/* ------------------ */
+.contact h2,
+.contact h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contactp {
+  font-size: 3rem;
+}
+.contact h2 {
+  font-size: 2.2rem;
+}
+.contact-logo {
+  font-size: 2rem;
+}
+.contact input,
+.contact select,
+.contact textarea {
+  font-size: 1.6rem;
+}
+.contact-map iframe {
+  width: 100%;
+  min-height: 400px;
+}
+.contact button {
+  font-size: 2rem;
+}
+
+/*---------------------FOOTER----------------------------*/
+
+footer {
+  font-size: 1.6rem;
+}
+
+/*---------------------MEDIA----------------------------*/
+@media (min-width: 725px) {
+  .artflex {
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+  }
+  .art1,
+  .art2 {
+    width: 100%;
+  }
+  .guider {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .guider h2 {
+    font-size: 3rem;
+  }
+  .option {
+    font-size: 2rem;
+  }
+  .pic1,
+  .pic2,
+  .pic3,
+  .pic4,
+  .pic5,
+  .pic6,
+  .pic7 {
+    width: 80%;
+    height: 400px;
+  }
+  .pictures {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .aboutus-shadow {
+    box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+  .modal-one,
+  .modal-two,
+  .modal-three {
+    width: 70%;
+  }
+  .carousel-img-one {
+    background-image: url(../img/index/t1m.jpg);
+  }
+  .carousel-img-two {
+    background-image: url(../img/index/d1m.jpg);
+  }
+
+  .carousel-img-three {
+    background-image: url(../img/index/t2m.jpg);
+  }
+  .picbg:hover {
+    background-color: transparent;
+    backdrop-filter: none;
+  }
+  .pic1,
+  .pic2,
+  .pic3,
+  .pic4,
+  .pic5,
+  .pic6,
+  .pic7 {
+    width: 300px;
+    height: 400px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .pictures {
+    width: 70%;
+  }
+  .pic1:hover,
+  .pic2:hover,
+  .pic3:hover,
+  .pic4:hover,
+  .pic5:hover,
+  .pic6:hover,
+  .pic7:hover {
+    transform: scale(1.6);
+    z-index: 10;
+    border: 2px solid black;
+  }
+
+  @media (min-width: 1400px) {
+    .carousel-item {
+      background-position: 35% 35%;
+      background-size: cover;
+      z-index: 0;
+    }
+    .carousel-img-one {
+      background-image: url(../img/index/t1l.jpg);
+    }
+    .carousel-img-two {
+      background-image: url(../img/index/d1l.jpg);
+    }
+
+    .carousel-img-three {
+      background-image: url(../img/index/t2l.jpg);
+    }
+  }
+}
